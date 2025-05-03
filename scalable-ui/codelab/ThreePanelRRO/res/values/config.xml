@@ -25,6 +25,7 @@
         <item>@xml/map_panel</item>
         <item>@xml/kitchen_sink_panel</item>
         <item>@xml/paintbooth_panel</item>
+        <item>@xml/decor_grip_bar_switch_task</item>
     </array>
 
     <string-array name="config_default_activities" translatable="false">

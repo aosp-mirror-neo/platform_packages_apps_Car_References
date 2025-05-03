@@ -31,9 +31,25 @@
 
     <dimen name="split_bottom">1020px</dimen>
 
-    <dimen name="contextual_bar_corner_radius">20dp</dimen>
+    <dimen name="corner_radius">40dp</dimen>
+    <dimen name="drag_corner_radius">80dp</dimen>
 
     <dimen name="app_immersive_top">@dimen/top_bar_bottom</dimen>
     <dimen name="app_immersive_height">1712px</dimen>
     <dimen name="app_height">749px</dimen>
+
+    <dimen name="top_breakpoint">350px</dimen>
+    <dimen name="bottom_breakpoint">1400px</dimen>
+
+
+    <dimen name="lower_grip_bar_switch_task_left">20px</dimen>
+    <dimen name="lower_grip_bar_switch_task_top">1350px</dimen>
+    <dimen name="lower_grip_bar_switch_task_right">40px</dimen>
+    <dimen name="lower_grip_bar_switch_task_bottom">1450px</dimen>
+
+    <dimen name="upper_grip_bar_switch_task_left">20px</dimen>
+    <dimen name="upper_grip_bar_switch_task_top">420px</dimen>
+    <dimen name="upper_grip_bar_switch_task_right">40px</dimen>
+    <dimen name="upper_grip_bar_switch_task_bottom">520px</dimen>
+
 </resources>

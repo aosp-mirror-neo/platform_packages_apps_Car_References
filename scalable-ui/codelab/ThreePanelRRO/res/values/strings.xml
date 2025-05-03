@@ -34,5 +34,6 @@
 
     <string name="config_appGridComponentName">@string/appgrid_componentName</string>
 
-    <string name="config_calmModeComponentName">@string/calmMode_componentName</string>
+    <string name="task_switch_grid_bar_provider">task_switch_grid_bar_provider</string>
+    <string name="decor_split_grip_bar_provider">decor_split_grip_bar_provider</string>
 </resources>

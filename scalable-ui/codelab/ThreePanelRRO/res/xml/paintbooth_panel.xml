@@ -14,22 +14,40 @@
   ~ limitations under the License.
   -->
 <Panel id="paintbooth_panel" defaultVariant="@id/closed" role="@string/paintbooth_componentName" displayId="0">
-    <Variant id="@+id/opened">
-        <Layer layer="@integer/app_grid_panel_layer"/>
+    <Variant id="@+id/base">
+        <Corner radius="@dimen/corner_radius"/>
+        <Layer layer="@integer/paintbooth_panel_layer"/>
+    </Variant>
+    <Variant id="@+id/bottom_opened" parent="@id/base">
         <Visibility isVisible="true"/>
-        <Corner radius="@dimen/contextual_bar_corner_radius"/>
         <Bounds left="0" bottom="@dimen/bottom_bar_top" width="100%" height="@dimen/app_height" />
     </Variant>
-    <Variant id="@+id/closed">
-        <Layer layer="@integer/app_grid_panel_layer"/>
+    <Variant id="@+id/closed" parent="@id/base">
         <Visibility isVisible="false"/>
         <Bounds left="0" top="@dimen/bottom_bar_bottom" width="100%" height="@dimen/app_grid_drawer_height" />
     </Variant>
+    <Variant id="@+id/drag_top_opened" parent="@id/base">
+        <Visibility isVisible="true"/>
+        <Bounds left="0" bottom="@dimen/bottom_bar_top" width="100%" height="@dimen/app_height" />
+        <SurfaceBounds left="0" top="@dimen/map_top" width="100%" height="@dimen/app_grid_drawer_height" />
+    </Variant>
+    <Variant id="@+id/top_opened" parent="@id/base">
+        <Visibility isVisible="true"/>
+        <Bounds left="0" top="@dimen/map_top" right="@dimen/map_right" bottom="@dimen/split_bottom" />
+    </Variant>
+
+    <KeyFrameVariant id="@+id/drag" parent="@id/base">
+        <KeyFrame frame="0" variant="@id/drag_top_opened" />
+        <KeyFrame frame="100" variant="@id/bottom_opened" />
+    </KeyFrameVariant>
 
     <Transitions>
         <Transition onEvent="_System_TaskOpenEvent" onEventTokens="panelId=app_panel" toVariant="@id/closed"/>
-        <Transition onEvent="_System_TaskOpenEvent" onEventTokens="panelId=paintbooth_panel" toVariant="@id/opened"/>
+        <Transition onEvent="_System_TaskOpenEvent" onEventTokens="panelId=paintbooth_panel" toVariant="@id/bottom_opened"/>
         <Transition onEvent="_System_TaskOpenEvent" onEventTokens="panelId=kitchen_sink_panel" toVariant="@id/closed"/>
         <Transition onEvent="_System_OnHomeEvent" toVariant="@id/closed"/>
+        <Transition onEvent="_User_DragEvent_split"  toVariant="@id/drag"/>
+        <Transition onEvent="_Drag_TaskSwitchEvent_top" toVariant="@id/top_opened"/>
+        <Transition onEvent="_Drag_TaskSwitchEvent_bottom"  toVariant="@id/bottom_opened"/>
     </Transitions>
 </Panel>

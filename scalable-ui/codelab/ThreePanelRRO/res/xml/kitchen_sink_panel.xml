@@ -14,13 +14,16 @@
   ~ limitations under the License.
   -->
 <Panel id="kitchen_sink_panel" defaultVariant="@id/closed" role="@string/kitchen_sink_componentName" displayId="0">
-    <Variant id="@+id/opened">
+    <Variant id="@+id/base">
+        <Corner radius="@dimen/corner_radius"/>
+    </Variant>
+    <Variant id="@+id/opened" parent="@id/base">
         <Layer layer="@integer/app_grid_panel_layer"/>
         <Visibility isVisible="true"/>
-        <Corner radius="@dimen/contextual_bar_corner_radius"/>
+        <Corner radius="@dimen/corner_radius"/>
         <Bounds left="0" bottom="@dimen/bottom_bar_top" width="100%" height="@dimen/app_height" />
     </Variant>
-    <Variant id="@+id/closed">
+    <Variant id="@+id/closed" parent="@id/base">
         <Layer layer="@integer/app_grid_panel_layer"/>
         <Visibility isVisible="false"/>
         <Bounds left="0" top="@dimen/bottom_bar_bottom" width="100%" height="@dimen/app_grid_drawer_height" />
