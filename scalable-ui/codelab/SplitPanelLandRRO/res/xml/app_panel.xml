@@ -45,7 +45,7 @@
 
 
     <Variant id="@+id/drag_frame_0" parent="@id/base">
-        <Bounds left="0" bottom="@dimen/bottom_bar_top" top="@dimen/top_bar_bottom" right="515"/>
+        <Bounds left="0" top="@dimen/top_bar_bottom" right="515" bottom="@dimen/bottom_bar_top"/>
         <SafeBounds
             bottom="@dimen/bottom_bar_top"
             left="40"
@@ -53,7 +53,7 @@
             right="515" />
     </Variant>
     <Variant id="@+id/drag_frame_50" parent="@id/base">
-        <Bounds left="0" bottom="@dimen/bottom_bar_top" top="@dimen/top_bar_bottom" right="1015" />
+        <Bounds left="0" top="@dimen/top_bar_bottom" right="1015" bottom="@dimen/bottom_bar_top" />
         <SafeBounds
             bottom="@dimen/bottom_bar_top"
             left="70"
@@ -61,7 +61,7 @@
             right="1015" />
     </Variant>
     <Variant id="@+id/drag_frame_100" parent="@id/base">
-        <Bounds left="0" bottom="@dimen/bottom_bar_top" top="@dimen/top_bar_bottom" right="1515"/>
+        <Bounds left="0" top="@dimen/top_bar_bottom" right="1515" bottom="@dimen/bottom_bar_top"/>
         <SafeBounds
             bottom="@dimen/bottom_bar_top"
             left="90"

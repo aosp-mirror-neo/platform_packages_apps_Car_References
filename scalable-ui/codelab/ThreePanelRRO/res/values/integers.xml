@@ -22,4 +22,5 @@
     <integer name="paintbooth_panel_layer">100</integer>
     <integer name="grip_bar_paintbooth_panel_layer">101</integer>
     <integer name="map_panel_layer">2</integer>
+    <integer name="decor_overlay_panel_layer">3</integer>
 </resources>
