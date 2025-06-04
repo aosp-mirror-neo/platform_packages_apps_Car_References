@@ -32,17 +32,9 @@
     <dimen name="contextual_bar_bottom">1836px</dimen>
     <dimen name="contextual_bar_height">408px</dimen>
 
-    <dimen name="app_immersive_top">@dimen/top_bar_bottom</dimen>
-    <dimen name="app_immersive_height">1712px</dimen>
     <dimen name="app_bottom">@dimen/contextual_bar_top</dimen>
     <dimen name="app_height">749px</dimen>
 
-    <dimen name="assistant_left">0px</dimen>
-    <dimen name="assistant_right">1080px</dimen>
-    <dimen name="assistant_top">0px</dimen>
-    <dimen name="assistant_height">1920px</dimen>
-
-    <dimen name="safe_bounds_open_top">1200px</dimen>
-    <dimen name="safe_bounds_close_top">2164px</dimen>
-    <dimen name="safe_bounds_close_bottom">2837px</dimen>
+    <dimen name="app_height_safe">673px</dimen>
+    <dimen name="app_safe_top_offset">76px</dimen>
 </resources>
