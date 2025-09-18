@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 
-<Panel id="decor_grip_bar_split_task" defaultVariant="@id/closed" role="@string/decor_split_grip_bar_provider" controller="@xml/decor_grib_bar_split_controller">
+<DecorPanel id="decor_grip_bar_split_task" defaultVariant="@id/closed" role="@string/decor_split_grip_bar_provider" controller="@xml/decor_grib_bar_split_controller">
     <Variant id="@+id/base">
         <Layer layer="@integer/decor_grip_bar_panel_layer"/>
         <Visibility isVisible="true"/>
@@ -55,4 +55,4 @@
         <Transition onEvent="_Drag_TaskSplitEvent_f50" toVariant="@id/opened_center"/>
         <Transition onEvent="_Drag_TaskSplitEvent_f100" toVariant="@id/opened_right"/>
     </Transitions>
-</Panel>
+</DecorPanel>

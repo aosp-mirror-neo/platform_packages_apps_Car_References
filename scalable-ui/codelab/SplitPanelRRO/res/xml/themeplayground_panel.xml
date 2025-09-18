@@ -13,7 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<Panel id="themeplayground_panel" defaultVariant="@id/closed" role="@array/themeplayground_componentNames" displayId="0">
+<TaskPanel id="themeplayground_panel" defaultVariant="@id/closed" role="@array/themeplayground_componentNames" displayId="0">
     <Variant id="@+id/base">
         <Corner radius="@dimen/corner_radius"/>
         <Visibility isVisible="true"/>
@@ -57,4 +57,4 @@
         <Transition onEvent="_System_OnAnimationEndEvent" onEventTokens="panelId=decor_split_nav_overlay;panelToVariantId=drag_frame_50" toVariant="@id/bottom_opened" duration="100"/>
         <Transition onEvent="_System_OnAnimationEndEvent" onEventTokens="panelId=decor_split_nav_overlay;panelToVariantId=drag_frame_100" toVariant="@id/drag_frame_100" duration="100"/>
     </Transitions>
-</Panel>
+</TaskPanel>
