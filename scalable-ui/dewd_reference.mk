@@ -25,4 +25,3 @@ PRODUCT_PACKAGES += \
     SplitPanelHorzRRO \
     TwoPanelWithInsetsRRO \
     TwoPanelRROSafeBounds \
-

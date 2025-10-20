@@ -13,7 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<Panel id="map_panel" defaultVariant="@id/opened" role="@array/nav_components" displayId="0">
+<TaskPanel id="map_panel" defaultVariant="@id/opened" role="@array/nav_components" displayId="0">
     <Variant id="@+id/map_base">
         <Layer layer="@integer/map_panel_layer"/>
         <Corner radius="@dimen/corner_radius"/>
@@ -51,4 +51,4 @@
         <Transition onEvent="_Drag_TaskSwitchEvent_top" toVariant="@id/opened_lower"/>
         <Transition onEvent="_Drag_TaskSwitchEvent_bottom" toVariant="@id/opened_split"/>
     </Transitions>
-</Panel>
+</TaskPanel>

@@ -13,7 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<Panel id="paintbooth_panel" defaultVariant="@id/closed" role="@string/paintbooth_componentName" displayId="0">
+<TaskPanel id="paintbooth_panel" defaultVariant="@id/closed" role="@string/paintbooth_componentName" displayId="0">
     <Variant id="@+id/base">
         <Corner radius="@dimen/corner_radius"/>
         <Layer layer="@integer/paintbooth_panel_layer"/>
@@ -49,4 +49,4 @@
         <Transition onEvent="_Drag_TaskSwitchEvent_top" toVariant="@id/top_opened"/>
         <Transition onEvent="_Drag_TaskSwitchEvent_bottom"  toVariant="@id/bottom_opened"/>
     </Transitions>
-</Panel>
+</TaskPanel>

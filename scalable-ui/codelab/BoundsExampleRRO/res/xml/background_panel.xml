@@ -13,7 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<Panel id="background_panel" defaultVariant="@id/fullscreen" role="@string/background_panel_array" displayId="0" controller="@xml/background_stub_controller">
+<TaskPanel id="background_panel" defaultVariant="@id/fullscreen" role="@string/background_panel_array" displayId="0" controller="@xml/background_stub_controller">
     <Variant id="@+id/fullscreen">
         <Layer layer="@integer/backgrond_panel_layer"/>
         <Visibility isVisible="true"/>
@@ -24,4 +24,4 @@
     <Transitions>
         <Transition onEvent="_System_OnHomeEvent" toVariant="@id/fullscreen"/>
     </Transitions>
-</Panel>
+</TaskPanel>

@@ -15,7 +15,7 @@
   -->
 
 <!-- TODO(b/409116725): migrate role to design compose friendly config. -->
-<Panel id="decor_split_grip_bar" defaultVariant="@id/closed" role="@string/decor_split_grip_bar_provider" controller="@xml/drag_switch_task_grip_controller">
+<DecorPanel id="decor_split_grip_bar" defaultVariant="@id/closed" role="@string/decor_split_grip_bar_provider" controller="@xml/drag_switch_task_grip_controller">
     <Variant id="@+id/base">
         <Layer layer="@integer/grip_bar_paintbooth_panel_layer"/>
         <Corner radius="@dimen/drag_corner_radius"/>
@@ -55,4 +55,4 @@
         <Transition onEvent="_Drag_TaskSwitchEvent_top" toVariant="@id/opened_top"/>
         <Transition onEvent="_Drag_TaskSwitchEvent_bottom"  toVariant="@id/opened_bottom"/>
     </Transitions>
-</Panel>
+</DecorPanel>

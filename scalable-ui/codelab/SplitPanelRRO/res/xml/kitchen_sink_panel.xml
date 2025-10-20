@@ -13,7 +13,7 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<Panel id="kitchen_sink_panel" defaultVariant="@id/closed" role="@string/kitchen_sink_componentName" displayId="0">
+<TaskPanel id="kitchen_sink_panel" defaultVariant="@id/closed" role="@string/kitchen_sink_componentName" displayId="0">
     <Variant id="@+id/base">
         <Corner radius="@dimen/corner_radius"/>
     </Variant>
@@ -36,4 +36,4 @@
         <Transition onEvent="_System_OnHomeEvent" toVariant="@id/closed"/>
         <Transition onEvent="_System_EnterSuwEvent" toVariant="@id/closed"/>
     </Transitions>
-</Panel>
+</TaskPanel>
