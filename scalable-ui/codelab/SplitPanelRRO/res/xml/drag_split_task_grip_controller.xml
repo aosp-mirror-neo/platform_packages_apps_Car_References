@@ -14,13 +14,13 @@
   ~ limitations under the License.
   -->
 <Controller id="drag_split_task_grip_controller">
-    <Config key="ControllerName" value="com.android.systemui.car.wm.scalableui.view.GripBarViewController"/>
-    <Config key="View" value="com.android.systemui.car.wm.scalableui.view.GripBar"/>
-    <Config key="EventId" value="_User_DragEvent_split" />
-    <Config key="dragDecreaseEventId" value="_User_DragEvent_split_decrease" />
-    <Config key="dragIncreaseEventId" value="_User_DragEvent_split_increase" />
-    <Config key="Orientation" value="0" />
-    <Config key="SnapThreadhold" value="5"/>
+    <ControllerName>com.android.systemui.car.wm.scalableui.view.GripBarViewController</ControllerName>
+    <View>com.android.systemui.car.wm.scalableui.view.GripBar</View>
+    <EventId>_User_DragEvent_split</EventId>
+    <DragDecreaseEventId>_User_DragEvent_split_decrease</DragDecreaseEventId>
+    <DragIncreaseEventId>_User_DragEvent_split_increase"</DragIncreaseEventId>
+    <Orientation>0</Orientation>
+    <SnapThreadhold>5</SnapThreadhold>
     <BreakPoints>
         <BreakPoint point="420" eventId="_Drag_TaskSplitEvent_f0" />
         <BreakPoint point="1070" eventId="_Drag_TaskSplitEvent_f50" />
