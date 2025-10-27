@@ -14,7 +14,7 @@
   ~ limitations under the License.
   -->
 <Controller id="decor_split_nav_overlay_controller">
-    <Config key="ControllerName" value="com.android.systemui.car.wm.scalableui.view.PanelOverlayController"/>
-    <Config key="View" value="com.android.systemui.car.wm.scalableui.view.PanelOverlay"/>
-    <Config key="overlayPanelId" value="map_panel" />
+    <ControllerName>com.android.systemui.car.wm.scalableui.view.PanelOverlayController</ControllerName>
+    <View>com.android.systemui.car.wm.scalableui.view.PanelOverlay</View>
+    <OverlayPanelId>map_panel</OverlayPanelId>
 </Controller>
