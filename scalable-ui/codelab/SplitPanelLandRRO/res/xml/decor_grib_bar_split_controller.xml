@@ -17,8 +17,6 @@
     <ControllerName>com.android.systemui.car.wm.scalableui.view.GripBarViewController</ControllerName>
     <View>com.android.systemui.car.wm.scalableui.view.GripBar</View>
     <EventId>_User_DragEvent_split</EventId>
-    <DragDecreaseEventId>_User_DragEvent_split_decrease</DragDecreaseEventId>
-    <DragIncreaseEventId>_User_DragEvent_split_increase"</DragIncreaseEventId>
     <Orientation>1</Orientation>
     <SnapThreadhold>5</SnapThreadhold>
     <BreakPoints>
