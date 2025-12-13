@@ -25,4 +25,6 @@ runtime_resource_overlay {
     certificate: "platform",
     manifest: "AndroidManifest.xml",
     system_ext_specific: true,
+    static_libs: ["com_android_car_scalableui_flags_lib"],
+    flags_packages: ["com_android_car_scalableui_flags"],
 }
